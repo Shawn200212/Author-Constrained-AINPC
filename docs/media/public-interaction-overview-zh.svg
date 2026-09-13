@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="520" viewBox="0 0 1040 520" role="img" aria-labelledby="title desc">
+<title id="title">AINPC 概念级职责示意</title>
+<desc id="desc">场景语境进入语言模型，模型提出行动。作者规则和世界状态供引擎检查，引擎执行已支持的动作并记录结果，为后续语境提供依据。完整服务链仍在开发。</desc>
+<defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0 0L8 4L0 8" fill="none" stroke="#a33c2c" stroke-width="1.5"/></marker></defs>
+<rect width="1040" height="520" rx="12" fill="#f2ede3"/>
+<g font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" fill="#28231d">
+<text x="36" y="47" font-size="26" font-weight="700">谁提出行动，谁实际执行</text>
+<text x="36" y="78" font-size="18" fill="#62594e">概念流程 · 公开概览</text>
+<g fill="#faf8f1" stroke="#b9aa96" stroke-width="1.5">
+<rect x="36" y="212" width="245" height="120" rx="8"/>
+<rect x="339" y="212" width="283" height="120" rx="8"/>
+<rect x="680" y="212" width="324" height="120" rx="8"/>
+<rect x="680" y="103" width="324" height="73" rx="8"/>
+</g>
+<text x="57" y="250" font-size="26" font-weight="700">场景语境</text>
+<text x="57" y="283" font-size="21">情境与交互</text>
+<text x="57" y="310" font-size="21">可见的世界状态</text>
+<text x="360" y="250" font-size="26" font-weight="700">语言模型</text>
+<text x="360" y="283" font-size="21">台词与意图</text>
+<text x="360" y="310" font-size="21">结构化的动作提议</text>
+<text x="701" y="250" font-size="26" font-weight="700">Unreal Engine</text>
+<text x="701" y="283" font-size="21">检查已支持的动作</text>
+<text x="701" y="310" font-size="21">负责执行并记录结果</text>
+<text x="701" y="133" font-size="23" font-weight="700">作者规则与世界状态</text>
+<text x="701" y="158" font-size="18">约束动作执行的条件</text>
+<g fill="none" stroke="#a33c2c" stroke-width="2.5" marker-end="url(#arrow)">
+<path d="M282 270H327"/><path d="M623 270H668"/><path d="M842 177V200"/>
+<path d="M842 334V393H160V344"/>
+</g>
+<text x="400" y="424" font-size="21" fill="#7f3427">执行记录为后续语境提供依据</text>
+<text x="36" y="478" font-size="19" fill="#62594e">完整服务链仍在开发。本图不包含评估方法细节或研究结果。</text>
+</g></svg>

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="520" viewBox="0 0 1040 520" role="img" aria-labelledby="title desc">
+<title id="title">AINPC conceptual responsibilities</title>
+<desc id="desc">Scene context informs a language model proposal. Author rules and world state inform Unreal Engine checks. The engine executes supported actions and records outcomes, which inform later context. This is a conceptual diagram, not evidence of a complete service loop.</desc>
+<defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0 0L8 4L0 8" fill="none" stroke="#a33c2c" stroke-width="1.5"/></marker></defs>
+<rect width="1040" height="520" rx="12" fill="#f2ede3"/>
+<g font-family="Arial, sans-serif" fill="#28231d">
+<text x="36" y="47" font-size="24" font-weight="700">Who proposes and who acts</text>
+<text x="36" y="78" font-size="17" fill="#62594e">Conceptual flow · public overview</text>
+<g fill="#faf8f1" stroke="#b9aa96" stroke-width="1.5">
+<rect x="36" y="212" width="245" height="120" rx="8"/>
+<rect x="339" y="212" width="283" height="120" rx="8"/>
+<rect x="680" y="212" width="324" height="120" rx="8"/>
+<rect x="680" y="103" width="324" height="73" rx="8"/>
+</g>
+<text x="57" y="250" font-size="24" font-weight="700">Scene context</text>
+<text x="57" y="283" font-size="19">Situation and interaction</text>
+<text x="57" y="310" font-size="19">Visible world state</text>
+<text x="360" y="250" font-size="24" font-weight="700">Language model</text>
+<text x="360" y="283" font-size="19">Dialogue and intentions</text>
+<text x="360" y="310" font-size="19">Structured action proposal</text>
+<text x="701" y="250" font-size="24" font-weight="700">Unreal Engine</text>
+<text x="701" y="283" font-size="19">Check supported actions</text>
+<text x="701" y="310" font-size="19">Execute and record outcomes</text>
+<text x="701" y="133" font-size="21" font-weight="700">Author rules and world state</text>
+<text x="701" y="158" font-size="17">Constraints on execution</text>
+<g fill="none" stroke="#a33c2c" stroke-width="2.5" marker-end="url(#arrow)">
+<path d="M282 270H327"/><path d="M623 270H668"/><path d="M842 177V200"/>
+<path d="M842 334V393H160V344"/>
+</g>
+<text x="400" y="424" font-size="19" fill="#7f3427">Recorded outcomes inform later context</text>
+<text x="36" y="478" font-size="17" fill="#62594e">The full service loop remains in development. Evaluation methods and results are not shown here.</text>
+</g></svg>

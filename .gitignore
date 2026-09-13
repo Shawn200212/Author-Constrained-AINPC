@@ -1,0 +1,20 @@
+# Curated showcase: new files require an explicit disclosure review.
+*
+!/.gitignore
+!/README.md
+!/README.zh-CN.md
+!/DISCLOSURE.md
+!/RIGHTS_AND_CREDITS.md
+!/docs/
+!/docs/media/
+!/docs/media/public-interaction-overview.svg
+!/docs/media/public-interaction-overview-zh.svg
+!/docs/media/ainpc-dining-room.jpg
+!/docs/media/ainpc-arrival.jpg
+!/docs/media/ainpc-conversation.jpg
+!/docs/media/ainpc-booth.jpg
+!/docs/media/ainpc-stairs.jpg
+!/docs/media/ainpc-partner-table.png
+!/docs/media/ainpc-partner-exchange.png
+!/docs/media/ainpc-table-gestures.png
+!/docs/media/ainpc-service-character.png
