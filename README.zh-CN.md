@@ -6,6 +6,8 @@
 
 [项目网页](https://ruixiaozhang.com/#work-ainpc)
 
+[场景与原型导览](docs/PROTOTYPE_GUIDE.md) · [公开图片清单](docs/public-media.json) · [版本范围](docs/VERSION_SCOPE.md)
+
 如何让游戏角色自由回应情境，同时让世界的作者保留对角色行动的控制？
 
 ## 问题从哪里来

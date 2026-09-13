@@ -6,6 +6,8 @@ This overview introduces the research prototype and its current progress. It is 
 
 [Project page](https://ruixiaozhang.com/index_EN#work-ainpc)
 
+[Scene and prototype guide](docs/PROTOTYPE_GUIDE.md) · [Public image inventory](docs/public-media.json) · [Version scope](docs/VERSION_SCOPE.md)
+
 How can a game character improvise without taking control away from the person who authored its world?
 
 ## Where the question began
