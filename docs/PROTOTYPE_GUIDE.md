@@ -1,47 +1,45 @@
-# A guide to the restaurant prototype / 餐厅原型导览
+# Reading the prototype / 原型导览
 
-[Overview / 项目首页](../README.md) · [中文首页](../README.zh-CN.md)
+[English overview](../README.md) · [中文首页](../README.zh-CN.md)
 
-## Read the scene before the architecture
+## Why the two layers matter
 
-The restaurant makes the relationship between conversation and action visible. A seat can be occupied, two characters can address each other across a table, and a service character can share the same space. These situations motivate the research; an image of them does not demonstrate that every associated task is autonomous or complete.
+An occupied seat and a broken commitment are different problems. UE can check whether the seat is available. Author constraints add the character's goals, commitments, order of actions and priorities. A proposal must fit those boundaries before execution, and UE must still check whether it can actually be carried out.
 
-| View | What to look for | What the image does not establish |
+| Responsibility | What it does | What it does not establish |
 |---|---|---|
-| [Dining room](media/ainpc-dining-room.jpg) | Characters, furniture and shared space in one setting | Reliable coordination across all characters |
-| [Partner table](media/ainpc-partner-table.png) | Seated posture and a character's relation to the table | Successful seating for every character |
-| [Across the table](media/ainpc-partner-exchange.png) | Orientation and the spatial setting for an exchange | Correct turn-taking or meaningful dialogue |
-| [Table gestures](media/ainpc-table-gestures.png) | Visible bodily expression during a runtime moment | Speech synchronization or task completion |
-| [Service character](media/ainpc-service-character.png) | The service character in the restaurant, in an editor view | A running service sequence |
+| Upper layer: model | Proposes dialogue, intent and high-level action at decision points | A proposal is not a command or a completed action |
+| Author-constraint boundary | Checks fit; may accept, adjust and recheck, request a new proposal or decline | This is not a third brain or a guarantee that every proposal is repairable |
+| Lower layer: UE | Rechecks live state, runs native tasks and confirms the outcome | An animation or spoken claim alone does not prove completion |
+| Separate records | Retain proposals, check decisions and outcomes for review | Records do not control actions or prove effectiveness by themselves |
 
-## How the research question developed
+The next decision uses actual world state. Record-keeping is a separate, one-way review path. This distinction matters: the model's statement that something happened cannot become evidence that it did.
 
-The starting point was a character that could respond in natural language. Connecting those responses to a shared world introduced a different problem: a plausible sentence can still describe an action that the world cannot, or should not, perform.
+Treating model output as executable instructions is a conceptual counterexample, not an experimental condition or an alternative mode in this prototype. It does not imply that UE's basic runtime checks can be bypassed. The proposed benefit of author constraints still needs evaluation.
 
-I therefore separated the model's proposal from the engine's execution. The model supplies dialogue and high-level intentions. In implemented paths, the runtime checks the proposal against the scene and author-defined constraints, handles execution, and records the outcome. This division lets me ask what was proposed and what actually happened without treating them as the same event.
+## What the images show
 
-That distinction also changes the evaluation question. An action can satisfy an explicit rule while still conflicting with the author's understanding of the situation. The research examines that gap separately from execution success. The detailed evaluation instrument and its results are outside this public overview.
-
-The next engineering step is to connect the existing local interactions into a sustained, embodied service sequence. That remains development work, not a demonstrated outcome of the images here.
-
-## What is available to inspect
-
-| Area | Publicly described status | Evidence boundary |
+| View | Visible content | Boundary |
 |---|---|---|
-| Proposal and execution separation | Implemented in prototype paths and being extended | The diagram explains responsibilities; it is not source code or an exhaustive specification |
-| Dialogue, captions, movement and seating | Present in development paths | Still images cannot establish timing, reliability or end-to-end success |
-| Restaurant and character presentation | Shown in the curated media | Runtime stills and the static editor view are labelled separately |
-| Ordering through payment | Full service sequence under development | No claim of complete autonomous service |
-| Evaluation during play | Future work | No claim of established player benefit |
+| [Waitress at the table](media/ainpc-table-service-20260915.png) | Service character beside a seated character, 15 Sep 2026 | Not a completed service sequence |
+| [A view from the seat](media/ainpc-seated-scene-20260915.png) | Seated posture and surrounding space, 15 Sep 2026 | Not a seating-reliability test |
+| [Partner table](media/ainpc-partner-table.png) | Partner's seated pose, 31 Aug 2026 | Not proof that every character can sit successfully |
+| [Table gestures](media/ainpc-table-gestures.png) | Body poses during an exchange, 8 Sep 2026 | Not a continuous dialogue or speech-synchronization record |
 
-The [machine-readable image inventory](public-media.json) contains filenames, dimensions, captions and available date information. It is media metadata, not an experimental dataset or a set of performance measurements. The images and their rights are covered by the [rights notice](../RIGHTS_AND_CREDITS.md).
+The [image inventory](public-media.json) lists all nine current stills. Dates, dimensions and captions are media metadata, not experimental measurements. The two September 15 images replace an older table view and an editor close-up in the current presentation; earlier public Git snapshots remain historical.
 
-## 中文导览：先看情境，再看职责
+## Current limits
 
-餐厅让“说了什么”与“做了什么”的关系变得可见：座位可能被占用，同桌角色需要面向彼此，服务角色也要在共享空间中行动。这些情境说明研究问题从哪里来；画面本身不能证明相关任务已经全部自主完成。
+Partial paths exist for dialogue, captions and speech, movement, seating, object interaction and service tasks. Connecting them into sustained service remains development work. Ordering through payment is incomplete; formal gameplay evaluation has not begun. Actual JSON schemas, author rules, repair selection, evaluation materials and findings remain outside this public overview.
 
-研究最初从自然语言回应出发。把回应接入场景后，我遇到的关键问题变成了：一句听起来合理的话，是否对应一个世界能够执行、作者也愿意接受的动作？因此，我把模型提议和引擎执行分开。在已实现的路径中，模型提出台词与高层意图，运行时结合场景和作者约束检查提议、处理执行并记录结果。这样，提出动作与真正完成动作就可以分别检查。
+## 中文：两层各自负责什么
 
-随后，研究进一步区分了两种判断：动作是否满足明确规则，以及它是否符合作者对具体情境的理解。公开材料介绍这个问题与职责分工，不公开评估规则、研究数据或结果。
+座位被占用与角色违背承诺，是不同的问题。UE 可以检查座位是否空闲；作者约束则加入角色目标、承诺、行动顺序和优先关系。提议先要符合这些边界，执行时仍须接受 UE 对现场条件的复核。
 
-下一步是把已有局部交互连接成能够持续运行的具身服务流程。从点餐到结账的完整链条仍在开发，不能用几张静帧替代完成证据。图片清单中的日期、尺寸和说明只是媒体资料，不是实验数据。Partner 桌、同桌交流、手势和服务角色均已在首页单独展示，其中服务角色图片明确标为编辑器静态视图。
+上层模型在决策时提出台词、意图和高层动作，不直接控制身体。两层之间的检查可以接受提议、保留原意调整后重查、要求重新规划，或明确不执行。下层 UE 处理原生任务，由世界状态确认结果；未完成时回退或结束。部分路径仍在开发，不保证所有提议都能修复。
+
+下一轮依据实际世界状态决策。提议、检查决定与执行结果另行记录，供事后复核，不参与动作选择。模型说“已经完成”，不能替代世界中的完成证据。
+
+“模型直接驱动引擎”只是架构反例，不是当前原型的实验组或可切换模式，也不表示能绕过 UE 的基础运行时检查。作者约束的预期价值仍需验证。
+
+本次用两张 9 月 15 日的运行静帧替换旧同桌视角和编辑器近景。九张现用图片的日期、尺寸与说明见[清单](public-media.json)；旧公开 Git 快照保留为历史记录。新图展示桌边关系与落座空间，不证明完整服务流程、语音同步或稳定成功。点餐至结账仍未完成，正式游玩评估尚未开展；具体协议、作者规则、修复选择与评估材料不公开。

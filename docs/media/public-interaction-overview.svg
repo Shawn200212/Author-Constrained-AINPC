@@ -1,32 +1,35 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="520" viewBox="0 0 1040 520" role="img" aria-labelledby="title desc">
-<title id="title">AINPC conceptual responsibilities</title>
-<desc id="desc">Scene context informs a language model proposal. Author rules and world state inform Unreal Engine checks. The engine executes supported actions and records outcomes, which inform later context. This is a conceptual diagram, not evidence of a complete service loop.</desc>
-<defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0 0L8 4L0 8" fill="none" stroke="#a33c2c" stroke-width="1.5"/></marker></defs>
-<rect width="1040" height="520" rx="12" fill="#f2ede3"/>
-<g font-family="Arial, sans-serif" fill="#28231d">
-<text x="36" y="47" font-size="24" font-weight="700">Who proposes and who acts</text>
-<text x="36" y="78" font-size="17" fill="#62594e">Conceptual flow · public overview</text>
-<g fill="#faf8f1" stroke="#b9aa96" stroke-width="1.5">
-<rect x="36" y="212" width="245" height="120" rx="8"/>
-<rect x="339" y="212" width="283" height="120" rx="8"/>
-<rect x="680" y="212" width="324" height="120" rx="8"/>
-<rect x="680" y="103" width="324" height="73" rx="8"/>
-</g>
-<text x="57" y="250" font-size="24" font-weight="700">Scene context</text>
-<text x="57" y="283" font-size="19">Situation and interaction</text>
-<text x="57" y="310" font-size="19">Visible world state</text>
-<text x="360" y="250" font-size="24" font-weight="700">Language model</text>
-<text x="360" y="283" font-size="19">Dialogue and intentions</text>
-<text x="360" y="310" font-size="19">Structured action proposal</text>
-<text x="701" y="250" font-size="24" font-weight="700">Unreal Engine</text>
-<text x="701" y="283" font-size="19">Check supported actions</text>
-<text x="701" y="310" font-size="19">Execute and record outcomes</text>
-<text x="701" y="133" font-size="21" font-weight="700">Author rules and world state</text>
-<text x="701" y="158" font-size="17">Constraints on execution</text>
-<g fill="none" stroke="#a33c2c" stroke-width="2.5" marker-end="url(#arrow)">
-<path d="M282 270H327"/><path d="M623 270H668"/><path d="M842 177V200"/>
-<path d="M842 334V393H160V344"/>
-</g>
-<text x="400" y="424" font-size="19" fill="#7f3427">Recorded outcomes inform later context</text>
-<text x="36" y="478" font-size="17" fill="#62594e">The full service loop remains in development. Evaluation methods and results are not shown here.</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1680" height="1510" viewBox="0 0 1680 1510" role="img" aria-labelledby="title desc" xml:lang="en"><title id="title">How a proposal becomes an action</title><desc id="desc">Scene context feeds a model proposal. An author-constraint boundary can accept, adjust and recheck, request a new proposal or decline. Unreal Engine rechecks live state and confirms execution outcomes. Actual world outcomes update context. Independent records are for review only.</desc><defs><marker id="a" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0L10 5L0 10Z" fill="#a33c2c"/></marker><marker id="b" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0L10 5L0 10Z" fill="#686052"/></marker><marker id="c" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0L10 5L0 10Z" fill="#82786a"/></marker></defs><rect width="1680" height="1510" rx="24" fill="#f2ede3"/><g font-family="Arial, Microsoft YaHei, Noto Sans CJK SC, sans-serif">
+<text x="60" y="63" font-size="44" fill="#28231d" font-weight="700">How a proposal becomes an action</text>
+<text x="60" y="105" font-size="24" fill="#62594e" font-weight="400">TWO LAYERS · AUTHOR CONSTRAINTS · WORLD FEEDBACK</text>
+<g id="author" data-node="true"><rect x="1030" y="150" width="590" height="180" rx="16" fill="#faf8f1" stroke="#b9aa96" stroke-width="2"/><text x="1060" y="185" font-size="21" fill="#62594e" font-weight="400">INDEPENDENT INPUT</text><text x="1060" y="228" font-size="34" fill="#28231d" font-weight="700">Author rules + live conditions</text><text x="1060" y="272" font-size="28" fill="#28231d" font-weight="400">Roles, goals and action order</text><text x="1060" y="311" font-size="28" fill="#28231d" font-weight="400">Objects, occupancy, permissions</text></g>
+<g id="context" data-node="true"><rect x="60" y="380" width="360" height="230" rx="16" fill="#faf8f1" stroke="#b9aa96" stroke-width="2"/><text x="86" y="416" font-size="21" fill="#62594e" font-weight="400">PREPARED INPUT</text><text x="86" y="459" font-size="34" fill="#28231d" font-weight="700">Scene context</text><text x="86" y="506" font-size="27" fill="#28231d" font-weight="400">Character and task</text><text x="86" y="545" font-size="27" fill="#28231d" font-weight="400">Dialogue and objects</text><text x="86" y="584" font-size="27" fill="#28231d" font-weight="400">Current world state</text></g>
+<g id="model" data-node="true"><rect x="490" y="365" width="450" height="310" rx="16" fill="#faf8f1" stroke="#b9aa96" stroke-width="2"/><text x="518" y="401" font-size="21" fill="#62594e" font-weight="400">UPPER · DECISION POINTS</text><text x="518" y="447" font-size="34" fill="#28231d" font-weight="700">Language model</text><text x="518" y="490" font-size="28" fill="#28231d" font-weight="400">Propose the next action.</text><text x="518" y="538" font-size="24" fill="#62594e" font-weight="400">Structured proposal · JSON</text><text x="518" y="577" font-size="28" fill="#28231d" font-weight="400">Dialogue · intent</text><text x="518" y="612" font-size="28" fill="#28231d" font-weight="400">Action · target reference</text><text x="518" y="650" font-size="24" fill="#62594e" font-weight="400">No direct world changes.</text></g>
+<g id="gate" data-node="true"><rect x="1030" y="380" width="590" height="260" rx="16" fill="#faf8f1" stroke="#b9aa96" stroke-width="2"/><text x="1060" y="427" font-size="34" fill="#28231d" font-weight="700">Author-constraint check</text><text x="1060" y="472" font-size="28" fill="#28231d" font-weight="400">Fits the author's boundaries</text><text x="1060" y="509" font-size="28" fill="#28231d" font-weight="400">and the current situation?</text><path d="M1060 533H1590" stroke="#d0c5b7" stroke-width="2"/><text x="1060" y="577" font-size="27" fill="#28231d" font-weight="400">If adjustable: preserve intent,</text><text x="1060" y="614" font-size="27" fill="#28231d" font-weight="400">revise locally and recheck.</text></g>
+<g id="replan" data-node="true"><rect x="490" y="735" width="450" height="140" rx="16" fill="#faf8f1" stroke="#b9aa96" stroke-width="2"/><text x="518" y="770" font-size="20" fill="#62594e" font-weight="400">IF A NEW PROPOSAL IS NEEDED</text><text x="518" y="815" font-size="32" fill="#28231d" font-weight="700">Return to the model</text><text x="518" y="854" font-size="26" fill="#28231d" font-weight="400">The same checks apply again.</text></g>
+<g id="stop" data-node="true"><rect x="490" y="1000" width="450" height="140" rx="16" fill="#faf8f1" stroke="#b9aa96" stroke-width="2"/><text x="518" y="1035" font-size="20" fill="#62594e" font-weight="400">IF THE ACTION CANNOT PROCEED</text><text x="518" y="1080" font-size="32" fill="#28231d" font-weight="700">Decline the action</text><text x="518" y="1119" font-size="26" fill="#28231d" font-weight="400">End the attempt; record why.</text></g>
+<g id="execute" data-node="true"><rect x="1030" y="900" width="590" height="270" rx="16" fill="#faf8f1" stroke="#b9aa96" stroke-width="2"/><text x="1060" y="936" font-size="21" fill="#62594e" font-weight="400">LOWER · EXECUTION AUTHORITY</text><text x="1060" y="980" font-size="34" fill="#28231d" font-weight="700">Unreal Engine</text><text x="1060" y="1023" font-size="28" fill="#28231d" font-weight="400">Recheck live state and resources.</text><text x="1060" y="1062" font-size="28" fill="#28231d" font-weight="400">Run native tasks and body actions.</text><path d="M1060 1080H1590" stroke="#d0c5b7" stroke-width="2"/><text x="1060" y="1117" font-size="30" fill="#28231d" font-weight="700">World confirms completion</text><text x="1060" y="1152" font-size="26" fill="#28231d" font-weight="400">Otherwise: roll back or end.</text></g>
+<g id="record" data-node="true"><rect x="1030" y="1260" width="590" height="170" rx="16" fill="#eae3d7" stroke="#b9aa96" stroke-width="2"/><text x="1060" y="1308" font-size="32" fill="#28231d" font-weight="700">Separate record · Read-only</text><text x="1060" y="1352" font-size="26" fill="#28231d" font-weight="400">Proposals · check decisions · outcomes</text><text x="1060" y="1394" font-size="26" fill="#62594e" font-weight="400">For review, not action selection.</text></g>
+<path data-connector="context-model" d="M420 495H490" fill="none" stroke="#a33c2c" stroke-width="3.5" stroke-linejoin="round" marker-end="url(#a)"/>
+<path data-connector="model-gate" d="M940 495H1030" fill="none" stroke="#a33c2c" stroke-width="3.5" stroke-linejoin="round" marker-end="url(#a)"/>
+<path data-connector="author-gate" d="M1325 330V380" fill="none" stroke="#a33c2c" stroke-width="3.5" stroke-linejoin="round" marker-end="url(#a)"/>
+<path data-connector="author-execute" d="M1620 235H1660V850H1510V900" fill="none" stroke="#a33c2c" stroke-width="3.5" stroke-linejoin="round" marker-end="url(#a)"/>
+<path data-connector="gate-replan" d="M1030 585H980V710H715V735" fill="none" stroke="#686052" stroke-width="3.5" stroke-linejoin="round" stroke-dasharray="10 7" marker-end="url(#b)"/>
+<path data-connector="replan-model" d="M490 800H450V570H490" fill="none" stroke="#686052" stroke-width="3.5" stroke-linejoin="round" stroke-dasharray="10 7" marker-end="url(#b)"/>
+<path data-connector="gate-stop" d="M1030 625H1000V1065H940" fill="none" stroke="#686052" stroke-width="3.5" stroke-linejoin="round" stroke-dasharray="10 7" marker-end="url(#b)"/>
+<path data-connector="gate-execute" d="M1325 640V900" fill="none" stroke="#a33c2c" stroke-width="3.5" stroke-linejoin="round" marker-end="url(#a)"/>
+<path data-connector="world-context" d="M1240 1170V1220H240V610" fill="none" stroke="#a33c2c" stroke-width="3.5" stroke-linejoin="round" marker-end="url(#a)"/>
+<path data-connector="execute-record" d="M1510 1170V1260" fill="none" stroke="#82786a" stroke-width="3.5" stroke-linejoin="round" stroke-dasharray="3 7" marker-end="url(#c)"/>
+<text x="1360" y="777" font-size="26" fill="#7f3427" font-weight="400">Checks passed</text>
+<text x="1450" y="835" font-size="24" fill="#7f3427" font-weight="400">Live-state recheck</text>
+<text x="400" y="1200" font-size="28" fill="#7f3427" font-weight="400">Confirmed world outcomes → next context</text>
+<text x="60" y="1293" font-size="27" fill="#62594e" font-weight="400">The check is a boundary, not a third brain.</text>
+<text x="60" y="1331" font-size="27" fill="#62594e" font-weight="400">JSON labels name information categories only.</text>
+<text x="60" y="1369" font-size="27" fill="#62594e" font-weight="400">Actual fields, rules and repair logic stay private.</text>
+<path d="M60 1410h35" stroke="#a33c2c" stroke-width="3.5" />
+<text x="105" y="1418" font-size="21" fill="#62594e" font-weight="400">Action / world feedback</text>
+<path d="M410 1410h35" stroke="#686052" stroke-width="3.5" stroke-dasharray="8 6"/>
+<text x="455" y="1418" font-size="21" fill="#62594e" font-weight="400">Replan / decline</text>
+<path d="M735 1410h35" stroke="#82786a" stroke-width="3.5" stroke-dasharray="3 6"/>
+<text x="780" y="1418" font-size="21" fill="#62594e" font-weight="400">One-way record</text>
+<text x="60" y="1477" font-size="25" fill="#62594e" font-weight="400">Design overview. Some paths remain in development; protocols and evaluation details are private.</text>
 </g></svg>

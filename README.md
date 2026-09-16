@@ -1,89 +1,85 @@
-# AINPC: Author-constrained character interaction
+# AINPC: Author-Constrained Improvisation
 
-[中文](README.zh-CN.md)
+[中文](README.zh-CN.md) · [Project page](https://ruixiaozhang.com/index_EN#work-ainpc)
 
-This overview introduces the research prototype and its current progress. It is not a runnable software release or a complete research artifact.
+The model proposes an action, author constraints check whether it fits, and Unreal Engine executes and confirms the result. AINPC explores how characters can improvise while the author retains control over what they can do.
 
-[Project page](https://ruixiaozhang.com/index_EN#work-ainpc)
+Public overview updated **16 September 2026**. This is a research prototype, not a runnable software release or a complete research artifact.
 
-[Scene and prototype guide](docs/PROTOTYPE_GUIDE.md) · [Public image inventory](docs/public-media.json) · [Version scope](docs/VERSION_SCOPE.md)
+## Speaking is not acting
 
-How can a game character improvise without taking control away from the person who authored its world?
+In the restaurant prototype, saying “I'm seated” does not make it so: the world must confirm that the character has sat down. Treating a model's response as an engine command could target an occupied seat, request an unsupported action or report success from outdated information. That direct connection is an architectural counterexample, not a mode used by this prototype.
 
-## Where the question began
+UE's checks still matter, but an executable action can be wrong for the situation. A character might use an available object while overlooking a commitment or the intended order of actions. Author constraints address that difference between **can execute** and **fits the author's intent**.
 
-I use a restaurant prototype to make this question concrete. A character might give a convincing answer yet try to use an occupied seat or ignore an earlier commitment. Using that seat may break an explicit rule. Ignoring a commitment may be allowed by the system but still conflict with the author's judgment of the situation. I therefore examine whether an action is permitted separately from whether it fits the author's intention.
+## Two layers, with a boundary between them
 
-## From dialogue to action
+The upper layer proposes. At decision points, the model reads the situation and available interactions, then returns dialogue, intent, a high-level action and a target reference as a structured proposal. It does not move the body frame by frame or choose animations.
 
-To preserve that distinction, I let the language model propose dialogue, intentions and high-level actions as structured data. Unreal Engine controls movement, interaction and changes to the world. The model's proposal can then be examined separately from the action the engine actually performs.
+An author-constraint check sits between the layers. Locally defined goals, objects, action order and priorities are not the model's to rewrite. The design allows acceptance, an intent-preserving adjustment followed by another check, a request for a new proposal, or an explicit refusal to act. This check is a responsibility boundary, not a third “brain”. Some paths remain in development; successful repair is not guaranteed.
 
-In the implemented paths, local checks assess a proposal against author-defined constraints and the current scene state. They check whether the target exists, the resource is available and the interaction is allowed before the proposal is handled. Rejection, fallback and execution outcomes are recorded for later inspection. These paths are still being extended, and the prototype does not guarantee a successful repair for every proposal.
+The lower layer runs in UE. It rechecks live state and resources, carries out native movement and interaction tasks, and confirms completion from the world. An incomplete task rolls back or ends explicitly. The next decision reads the actual outcome, not a claim of success. Proposals, checks and outcomes are also recorded separately for review; those records do not select actions.
 
-Execution also needs its own tracking because a model response and a character animation do not finish at the same time. In the implemented paths, the runtime tracks each action from start to finish and records completion only after engine-side confirmation. Speech synthesis and captions present the dialogue; movement and seating have separate execution tasks. A character's claim to have finished cannot substitute for evidence in the world state.
+![Two-layer architecture: context feeds model proposals; author constraints gate execution; UE confirms world outcomes. Separate paths handle replanning, refusal, world feedback and read-only records.](docs/media/public-interaction-overview.svg)
 
-## What the research examines
+[Open the full-size diagram](docs/media/public-interaction-overview.svg). It shows responsibilities and information categories, not actual JSON fields, prompts, author rules or repair algorithms.
 
-Separating proposals from execution raises a further question about evaluation: does an automated judgment reflect the distinctions an author makes in a particular situation? Answering this does not establish successful engine execution or an improvement in player experience. This page introduces the research question and prototype approach. Detailed evaluation rules, data and findings are not public.
+## Where the prototype stands
 
-## Current progress and next steps
+Dialogue, captions and speech, movement, seating, object interaction and service tasks have partial runtime paths. Work is connecting these into a longer sequence. The ordering-to-payment flow is incomplete, and formal gameplay evaluation has not begun.
 
-The images below come from development in August and September 2026. They include runtime stills and a separately labelled static editor view, showing the restaurant, characters, seating and gestures rather than sustained reliable behavior. The full service sequence, from ordering to payment, remains in development. Formal evaluation during play is planned for later work.
+The research will examine whether system judgments reflect the author's requirements in a given situation. Execution reliability, character understanding and player experience need separate validation. Evaluation rules, data and findings remain private.
 
-![Scene context informs a language model proposal. The engine checks it against author rules and world state, executes the action and records the outcome to inform later context.](docs/media/public-interaction-overview.svg)
+## Inside the restaurant
 
-The diagram explains the division of responsibility, not the complete implementation. The model proposes actions, and the engine checks and executes them. Evaluation formulas, private data and research findings are not shown.
+These nine development stills from August and September 2026 show characters, seating and gestures. Some retain debug rings, and the visuals are unfinished. A still does not verify continuous dialogue, synchronized speech or a completed service task.
 
-## Inside the prototype
+### Waitress at the table
 
-### A shared world
+![Waitress standing beside a seated character](docs/media/ainpc-table-service-20260915.png)
 
-![A shared world](docs/media/ainpc-dining-room.jpg)
+15 Sep 2026 · Runtime still: Waitress and a seated character share the table setting.
 
-The restaurant brings characters, tables and shared spaces into one scene. It provides a concrete setting for investigating how dialogue relates to actions in a world with rules.
+### A view from the seat
 
-### Dialogue in a physical setting
+![A seated foreground character in the restaurant](docs/media/ainpc-seated-scene-20260915.png)
 
-![Dialogue in a physical setting](docs/media/ainpc-conversation.jpg)
+15 Sep 2026 · Runtime still: seated posture, orientation and surrounding space.
 
-Seating gives the conversation a visible spatial context. Different parts of the prototype handle speech, captions, posture and movement. The image shows the interaction setting; its quality still needs to be evaluated.
+### A shared restaurant
 
-### Objects as interaction conditions
+![Characters and tables in the shared restaurant](docs/media/ainpc-dining-room.jpg)
 
-![Objects as interaction conditions](docs/media/ainpc-booth.jpg)
+Characters, tables and walkways form the setting for action.
 
-Seats and tables are objects the characters act on, so they cannot be treated only as scenery. The ongoing work will continue to check whether intentions map to valid targets and whether the expected changes can be observed and confirmed after execution.
+### A seated conversation
 
-## Further views of the same prototype
+![A character seated in the conversation setting](docs/media/ainpc-conversation.jpg)
 
-![Further views of the same prototype](docs/media/ainpc-arrival.jpg)
+Seating and orientation give the conversation a place in the scene.
 
-![Further views of the same prototype](docs/media/ainpc-stairs.jpg)
+### Furniture as interaction
 
-## Characters and table interactions: additional views
+![Seats and tables in the restaurant booth](docs/media/ainpc-booth.jpg)
 
-### The Partner table
+Tables and chairs are objects to find and use, not just scenery.
 
-![The Partner table](docs/media/ainpc-partner-table.png)
+### Seated together
 
-Runtime still, 31 August 2026. The Partner character’s seated pose and the furniture establish the spatial setting for an exchange. This historical development image does not verify seating for every character in the current build.
+![Partner character seated at the table](docs/media/ainpc-partner-table.png)
 
-### Across the table
+31 Aug 2026 · Runtime still: the Partner character's seated pose and table position.
 
-![Across the table](docs/media/ainpc-partner-exchange.png)
+### Table gestures
 
-Runtime still, 31 August 2026. Another view shows the character’s orientation, gesture and position relative to others at the table. It shows an interaction setting; speech content and turn-taking quality require a continuous record.
+![Character poses during a table exchange](docs/media/ainpc-table-gestures.png)
 
-### Gestures in a shared scene
+8 Sep 2026 · Runtime still: character poses during a table exchange.
 
-![Gestures in a shared scene](docs/media/ainpc-table-gestures.png)
+### Further views
 
-Runtime still, 8 September 2026. Gestures give the exchange a visible bodily form. The frame records a momentary pose, not evidence of correct dialogue, synchronized speech or a completed service task.
+![Another view of the restaurant prototype](docs/media/ainpc-arrival.jpg)
 
-### The service character
+![A further view of the shared scene](docs/media/ainpc-stairs.jpg)
 
-![The service character](docs/media/ainpc-service-character.png)
-
-Static editor view, 12 September 2026. The service character was identified against the project’s actor data. This close view shows the character and restaurant environment, rather than a service-sequence or speech test.
-
-[Disclosure scope](DISCLOSURE.md) · [Rights and credits](RIGHTS_AND_CREDITS.md)
+[Prototype guide](docs/PROTOTYPE_GUIDE.md) · [Image inventory](docs/public-media.json) · [Version scope](docs/VERSION_SCOPE.md) · [Disclosure](DISCLOSURE.md) · [Rights and credits](RIGHTS_AND_CREDITS.md)
