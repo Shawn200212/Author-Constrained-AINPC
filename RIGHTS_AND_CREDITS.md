@@ -1,13 +1,13 @@
-# Rights and credits
+# Rights and credits / 权利与署名
 
-Research framework, interaction design, UE prototype integration and development verification by YUISIU ZHANG.
+Research framework, interaction design and UE prototype integration by YUISIU ZHANG.
 
-The prototype uses Unreal Engine, MetaHuman, Azure AI Speech and a hosted language model, together with third-party character, animation and environment assets. These names identify the development context and do not imply endorsement. The author's research and integration work does not imply sole authorship or ownership of those underlying assets.
+The prototype uses Unreal Engine, MetaHuman, Azure AI Speech and a hosted language model, alongside third-party character, animation and environment assets. These names describe the development context and do not imply endorsement or sole authorship of the underlying assets.
 
-The current gallery contains nine selected development images. The 17 September 2026 update adds an editor menu-grip pose candidate, a child seating-adaptation candidate and a controlled menu-on-table test image dated 15 September. They replace three environmental views in the gallery. The earlier public image files remain as historical material.
+The current presentation contains three unchanged development captures and bilingual conceptual diagrams. Captures retain any debug markers and unfinished visuals. They are not substitutes for evaluation evidence.
 
-Original image bytes are preserved. Candidate poses are identified as candidates; the controlled run is identified as a test with a specific setup. Debug rings and unfinished visuals remain visible where present. None of the images establishes complete autonomous service, stable seating or grasping, or speech quality. Individual dates, dimensions and evidence boundaries are listed in the image inventory.
+No software or asset reuse license is granted by this showcase. Third-party content remains subject to its respective rights and licenses. Contact the author about permitted reuse, and attribute any reference to this project accurately. An attribution notice cannot prevent imitation or make already-public information private.
 
-The images document this prototype. They do not grant rights to extract, redistribute or reuse the underlying characters, animation, environment assets or other third-party content. Third-party materials remain subject to their respective rights and licenses.
+研究框架、交互设计与 UE 原型集成：张睿潇（YUISIU ZHANG）。角色、动画、环境及所用平台保留各自的权利；本项目不宣称独立制作所有可见资产，也不代表相关平台背书。
 
-The conceptual diagrams and accompanying prose explain the public project overview. No software or asset reuse license is granted by this showcase. Unreal project source and third-party source assets are not included. Contact the project author about permitted reuse.
+当前展示三张未经内容修改的开发截图与双语概念图，不授权提取或重新分发底层资产。引用项目时请准确注明来源；需要转载或复用请联系作者。署名要求不能保证杜绝模仿。
