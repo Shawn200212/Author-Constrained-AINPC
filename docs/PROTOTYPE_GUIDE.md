@@ -2,44 +2,53 @@
 
 [English overview](../README.md) · [中文首页](../README.zh-CN.md)
 
-## Why the two layers matter
+## Reading the work
 
-An occupied seat and a broken commitment are different problems. UE can check whether the seat is available. Author constraints add the character's goals, commitments, order of actions and priorities. A proposal must fit those boundaries before execution, and UE must still check whether it can actually be carried out.
+AINPC examines how authors can shape improvisation by game characters and inspect the relation between a proposed action and its outcome. The restaurant brings shared objects, bodily actions and social expectations together in an observable scene.
+
+YUISIU ZHANG is responsible for the research framework, interaction design, UE prototype integration and development verification. The prototype combines this work with Unreal Engine, MetaHuman, speech and language-model services, and third-party character, animation and environment assets. Development verification does not establish independently evaluated effectiveness.
+
+## Responsibilities in the design
 
 | Responsibility | What it does | What it does not establish |
 |---|---|---|
 | Upper layer: model | Proposes dialogue, intent and high-level action at decision points | A proposal is not a command or a completed action |
-| Author-constraint boundary | Checks fit; may accept, adjust and recheck, request a new proposal or decline | This is not a third brain or a guarantee that every proposal is repairable |
-| Lower layer: UE | Rechecks live state, runs native tasks and confirms the outcome | An animation or spoken claim alone does not prove completion |
-| Separate records | Retain proposals, check decisions and outcomes for review | Records do not control actions or prove effectiveness by themselves |
+| Author-constraint boundary | Checks fit; may accept, adjust and recheck, request a new proposal or decline | Not a guarantee that every proposal can be repaired |
+| Lower layer: UE | Rechecks live conditions, runs native tasks and confirms outcomes | An animation or spoken claim alone does not prove completion |
+| Separate records | Retain proposals, check decisions and outcomes for review | Records do not control actions or establish effectiveness |
 
-The next decision uses actual world state. Record-keeping is a separate, one-way review path. This distinction matters: the model's statement that something happened cannot become evidence that it did.
+The next decision uses actual world state. Treating model output as executable instructions is a conceptual counterexample, not a mode or experimental condition used by this prototype. The conceptual diagrams describe responsibilities; some paths remain in development.
 
-Treating model output as executable instructions is a conceptual counterexample, not an experimental condition or an alternative mode in this prototype. It does not imply that UE's basic runtime checks can be bypassed. The proposed benefit of author constraints still needs evaluation.
+## What the new images show
 
-## What the images show
+| View | Development stage | What the image supports | Limit |
+|---|---|---|---|
+| [Menu-grip pose](media/menu-pose-20260917.png), 17 Sep 2026 | Editor pose candidate | A proposed hand and menu arrangement | Does not demonstrate runtime grasping |
+| [Child seating adaptation](media/child-seat-study-20260917.png), 17 Sep 2026 | Pose-adaptation candidate | A candidate child pose in relation to a chair and table | Does not demonstrate a complete seating action |
+| [Menu on the table](media/menu-table-test-20260915.png), 15 Sep 2026 | Controlled development run with a test setup | The visible menu position at one point in the test | Does not establish autonomous service or an uninterrupted task sequence |
 
-| View | Visible content | Boundary |
-|---|---|---|
-| [Waitress at the table](media/ainpc-table-service-20260915.png) | Service character beside a seated character, 15 Sep 2026 | Not a completed service sequence |
-| [A view from the seat](media/ainpc-seated-scene-20260915.png) | Seated posture and surrounding space, 15 Sep 2026 | Not a seating-reliability test |
-| [Partner table](media/ainpc-partner-table.png) | Partner's seated pose, 31 Aug 2026 | Not proof that every character can sit successfully |
-| [Table gestures](media/ainpc-table-gestures.png) | Body poses during an exchange, 8 Sep 2026 | Not a continuous dialogue or speech-synchronization record |
+The [image inventory](public-media.json) describes all nine current gallery images. Six earlier stills provide scene, posture and gesture context. Dates and dimensions are media metadata, not experimental measurements. Three earlier environmental views have left the current gallery; already-public files and Git snapshots remain available as historical material.
 
-The [image inventory](public-media.json) lists all nine current stills. Dates, dimensions and captions are media metadata, not experimental measurements. The two September 15 images replace an older table view and an editor close-up in the current presentation; earlier public Git snapshots remain historical.
+## Work still in progress
 
-## Current limits
+Partial paths exist for dialogue, captions and speech, movement, seating, object interaction and service tasks. The three new images document specific development work, not a completed integration of those paths. Connecting them into sustained interaction remains unfinished. Ordering through payment is incomplete; formal gameplay evaluation has not begun. Execution reliability, character understanding and player experience need separate investigation.
 
-Partial paths exist for dialogue, captions and speech, movement, seating, object interaction and service tasks. Connecting them into sustained service remains development work. Ordering through payment is incomplete; formal gameplay evaluation has not begun. Actual JSON schemas, author rules, repair selection, evaluation materials and findings remain outside this public overview.
+Actual JSON schemas, prompts, author rules, repair selection, evaluation materials and findings remain outside the public overview.
 
-## 中文：两层各自负责什么
+## 中文：如何阅读这项工作
 
-座位被占用与角色违背承诺，是不同的问题。UE 可以检查座位是否空闲；作者约束则加入角色目标、承诺、行动顺序和优先关系。提议先要符合这些边界，执行时仍须接受 UE 对现场条件的复核。
+AINPC 关注作者如何约束游戏角色的即兴行动，以及如何检查行动提议与实际结果之间的关系。餐厅把共享物件、身体行动和社会期待放在同一个可观察的场景中。
 
-上层模型在决策时提出台词、意图和高层动作，不直接控制身体。两层之间的检查可以接受提议、保留原意调整后重查、要求重新规划，或明确不执行。下层 UE 处理原生任务，由世界状态确认结果；未完成时回退或结束。部分路径仍在开发，不保证所有提议都能修复。
+张睿潇负责研究框架、交互设计、UE 原型集成与开发验证。原型同时使用 Unreal Engine、MetaHuman、语音与语言模型服务，以及第三方角色、动画和环境资产。开发过程中的验证不等于效果已获得独立评估。
 
-下一轮依据实际世界状态决策。提议、检查决定与执行结果另行记录，供事后复核，不参与动作选择。模型说“已经完成”，不能替代世界中的完成证据。
+上层模型提出台词、意图和高层动作，作者约束检查提议是否合适，下层 UE 复核现场条件、执行任务并确认结果。方案允许接受、调整后重查、要求新提议或不执行；部分路径仍在开发。提议、检查和结果另行记录，供事后复核，不参与动作选择。把模型输出直接当作执行指令只是说明问题的概念反例，不是本原型采用的模式或实验组。
 
-“模型直接驱动引擎”只是架构反例，不是当前原型的实验组或可切换模式，也不表示能绕过 UE 的基础运行时检查。作者约束的预期价值仍需验证。
+9 月 17 日新增展示的三张图片具有不同性质：
 
-本次用两张 9 月 15 日的运行静帧替换旧同桌视角和编辑器近景。九张现用图片的日期、尺寸与说明见[清单](public-media.json)；旧公开 Git 快照保留为历史记录。新图展示桌边关系与落座空间，不证明完整服务流程、语音同步或稳定成功。点餐至结账仍未完成，正式游玩评估尚未开展；具体协议、作者规则、修复选择与评估材料不公开。
+- 菜单握持图是编辑器姿势候选，不证明运行时抓取。
+- 儿童坐姿图是适配候选，不证明完整落座动作。
+- 9 月 15 日菜单位于桌面的图片来自带有测试安排的受控开发运行，只展示某一时刻的菜单位置，不证明自主服务或连续任务链。
+
+当前图库共九张，另外六张早期静帧提供场景、坐姿和手势的背景。三张旧环境图不再用于当前图库，但原公开文件和历史快照保留。日期与尺寸只是媒体信息，不是实验测量。
+
+对话、字幕与语音、移动、落座、物件交互和服务任务已有局部路径，把这些能力串成持续互动仍未完成。点餐至结账的完整流程尚未完成，正式游玩评估尚未开展。执行可靠性、角色理解与玩家体验仍需分别研究；具体协议、提示词、作者规则、修复选择、评估材料和结果不公开。

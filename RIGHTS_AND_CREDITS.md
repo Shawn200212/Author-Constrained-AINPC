@@ -1,11 +1,13 @@
 # Rights and credits
 
-Project research and prototype development by YUISIU ZHANG.
+Research framework, interaction design, UE prototype integration and development verification by YUISIU ZHANG.
 
-The prototype uses Unreal Engine, MetaHuman, Azure AI Speech and a hosted language model. These names identify the implementation context and do not imply endorsement.
+The prototype uses Unreal Engine, MetaHuman, Azure AI Speech and a hosted language model, together with third-party character, animation and environment assets. These names identify the development context and do not imply endorsement. The author's research and integration work does not imply sole authorship or ownership of those underlying assets.
 
-The current nine restaurant images are approved development captures selected for the public project page. They include two runtime stills dated 15 September 2026, replacing an older table view and the static editor close-up in this presentation. Original screenshot pixels are preserved; debug rings and unfinished visuals remain visible. Individual dates and available date precision are listed in the image inventory. None establishes complete service execution or speech quality.
+The current gallery contains nine selected development images. The 17 September 2026 update adds an editor menu-grip pose candidate, a child seating-adaptation candidate and a controlled menu-on-table test image dated 15 September. They replace three environmental views in the gallery. The earlier public image files remain as historical material.
 
-The images document this prototype. They do not grant rights to extract, redistribute or reuse the underlying characters, environment assets or other third-party content. Third-party materials remain subject to their respective rights and licenses.
+Original image bytes are preserved. Candidate poses are identified as candidates; the controlled run is identified as a test with a specific setup. Debug rings and unfinished visuals remain visible where present. None of the images establishes complete autonomous service, stable seating or grasping, or speech quality. Individual dates, dimensions and evidence boundaries are listed in the image inventory.
 
-The conceptual diagrams and accompanying prose explain the public project overview. No software or asset reuse license is granted by this showcase. Contact the project author about permitted reuse.
+The images document this prototype. They do not grant rights to extract, redistribute or reuse the underlying characters, animation, environment assets or other third-party content. Third-party materials remain subject to their respective rights and licenses.
+
+The conceptual diagrams and accompanying prose explain the public project overview. No software or asset reuse license is granted by this showcase. Unreal project source and third-party source assets are not included. Contact the project author about permitted reuse.

@@ -1,16 +1,105 @@
 {
-  "description": "Curated prototype media metadata; not an experimental dataset or performance evidence.",
+  "description": "Current nine-image gallery: selected prototype development media, not an experimental dataset or performance evidence.",
   "path_base": "repository root",
   "rights_notice": "RIGHTS_AND_CREDITS.md",
   "items": [
-    {"file": "docs/media/ainpc-dining-room.jpg", "width": 1600, "height": 900, "kind": "development_still", "date_precision": "development_period", "date_label": "August–September 2026", "caption_en": "Restaurant characters and shared space.", "caption_zh": "餐厅角色与共享空间。"},
-    {"file": "docs/media/ainpc-arrival.jpg", "width": 1600, "height": 900, "kind": "development_still", "date_precision": "development_period", "date_label": "August–September 2026", "caption_en": "Another view of the restaurant prototype.", "caption_zh": "餐厅原型的另一视角。"},
-    {"file": "docs/media/ainpc-conversation.jpg", "width": 1600, "height": 900, "kind": "development_still", "date_precision": "development_period", "date_label": "August–September 2026", "caption_en": "The spatial setting for character conversation.", "caption_zh": "角色交流所处的空间情境。"},
-    {"file": "docs/media/ainpc-booth.jpg", "width": 1600, "height": 900, "kind": "development_still", "date_precision": "development_period", "date_label": "August–September 2026", "caption_en": "Seats and tables as interaction objects.", "caption_zh": "作为交互对象的座椅与桌子。"},
-    {"file": "docs/media/ainpc-stairs.jpg", "width": 1600, "height": 900, "kind": "development_still", "date_precision": "development_period", "date_label": "August–September 2026", "caption_en": "A further view of the shared scene.", "caption_zh": "共享场景的补充视角。"},
-    {"file": "docs/media/ainpc-partner-table.png", "width": 1600, "height": 900, "kind": "runtime_still", "date_precision": "day", "date_label": "2026-08-31", "caption_en": "Partner character seated at the table; a historical development moment.", "caption_zh": "Partner 角色在桌边落座的历史开发画面。"},
-    {"file": "docs/media/ainpc-seated-scene-20260915.png", "width": 1600, "height": 900, "kind": "runtime_still", "date_precision": "day", "date_label": "2026-09-15", "caption_en": "Seated posture, orientation and surrounding restaurant space.", "caption_zh": "角色的坐姿、朝向与周围餐厅空间。"},
-    {"file": "docs/media/ainpc-table-gestures.png", "width": 1920, "height": 1080, "kind": "runtime_still", "date_precision": "day", "date_label": "2026-09-08", "caption_en": "Visible bodily expression during one runtime moment.", "caption_zh": "运行时某一瞬间可见的身体表达。"},
-    {"file": "docs/media/ainpc-table-service-20260915.png", "width": 1600, "height": 900, "kind": "runtime_still", "date_precision": "day", "date_label": "2026-09-15", "caption_en": "Waitress standing beside a seated character at the table.", "caption_zh": "Waitress 与落座角色的桌边位置关系。"}
-  ]
+    {
+      "file": "docs/media/menu-pose-20260917.png",
+      "width": 1600,
+      "height": 900,
+      "kind": "editor_pose_candidate",
+      "date_precision": "day",
+      "date_label": "2026-09-17",
+      "caption_en": "Editor pose candidate for holding a menu.",
+      "caption_zh": "编辑器中的菜单握持姿势候选。",
+      "evidence_limit_en": "Does not demonstrate runtime grasping.",
+      "evidence_limit_zh": "不证明运行时抓取已经完成。"
+    },
+    {
+      "file": "docs/media/child-seat-study-20260917.png",
+      "width": 1280,
+      "height": 720,
+      "kind": "pose_adaptation_candidate",
+      "date_precision": "day",
+      "date_label": "2026-09-17",
+      "caption_en": "Child pose-adaptation candidate beside a restaurant table.",
+      "caption_zh": "儿童角色在餐桌旁的坐姿适配候选。",
+      "evidence_limit_en": "Does not demonstrate a complete seating action.",
+      "evidence_limit_zh": "不证明完整落座动作已经完成。"
+    },
+    {
+      "file": "docs/media/menu-table-test-20260915.png",
+      "width": 1600,
+      "height": 900,
+      "kind": "controlled_development_still",
+      "date_precision": "day",
+      "date_label": "2026-09-15",
+      "caption_en": "Menu visible on the table during a controlled development run with a test setup.",
+      "caption_zh": "带有测试安排的受控开发运行中，菜单位于桌面的画面。",
+      "evidence_limit_en": "Does not establish autonomous service or an uninterrupted task sequence.",
+      "evidence_limit_zh": "不证明自主服务或连续任务链。"
+    },
+    {
+      "file": "docs/media/ainpc-table-service-20260915.png",
+      "width": 1600,
+      "height": 900,
+      "kind": "runtime_still",
+      "date_precision": "day",
+      "date_label": "2026-09-15",
+      "caption_en": "Waitress standing beside a seated character at the table.",
+      "caption_zh": "Waitress 与落座角色的桌边位置关系。"
+    },
+    {
+      "file": "docs/media/ainpc-seated-scene-20260915.png",
+      "width": 1600,
+      "height": 900,
+      "kind": "runtime_still",
+      "date_precision": "day",
+      "date_label": "2026-09-15",
+      "caption_en": "Seated posture, orientation and surrounding restaurant space.",
+      "caption_zh": "角色的坐姿、朝向与周围餐厅空间。"
+    },
+    {
+      "file": "docs/media/ainpc-dining-room.jpg",
+      "width": 1600,
+      "height": 900,
+      "kind": "development_still",
+      "date_precision": "development_period",
+      "date_label": "August–September 2026",
+      "caption_en": "Restaurant characters and shared space.",
+      "caption_zh": "餐厅角色与共享空间。"
+    },
+    {
+      "file": "docs/media/ainpc-conversation.jpg",
+      "width": 1600,
+      "height": 900,
+      "kind": "development_still",
+      "date_precision": "development_period",
+      "date_label": "August–September 2026",
+      "caption_en": "The spatial setting for character conversation.",
+      "caption_zh": "角色交流所处的空间情境。"
+    },
+    {
+      "file": "docs/media/ainpc-partner-table.png",
+      "width": 1600,
+      "height": 900,
+      "kind": "runtime_still",
+      "date_precision": "day",
+      "date_label": "2026-08-31",
+      "caption_en": "Partner character seated at the table; a historical development moment.",
+      "caption_zh": "Partner 角色在桌边落座的历史开发画面。"
+    },
+    {
+      "file": "docs/media/ainpc-table-gestures.png",
+      "width": 1920,
+      "height": 1080,
+      "kind": "runtime_still",
+      "date_precision": "day",
+      "date_label": "2026-09-08",
+      "caption_en": "Visible bodily expression during one runtime moment.",
+      "caption_zh": "运行时某一瞬间可见的身体表达。"
+    }
+  ],
+  "updated": "2026-09-17",
+  "historical_media_note": "Three earlier environmental views remain in the repository as historical public material but are not part of this current gallery."
 }
