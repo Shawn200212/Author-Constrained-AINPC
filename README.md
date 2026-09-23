@@ -42,6 +42,6 @@ Conversation sits within a shared table setting, where character orientation, di
 
 Guests and service staff inhabit the same environment. Their relationships provide a setting for examining authored intentions and action choices.
 
-[Prototype guide](docs/PROTOTYPE_GUIDE.md) · [Image inventory](docs/public-media.json) · [Version scope](docs/VERSION_SCOPE.md) · [Disclosure](DISCLOSURE.md) · [Rights and credits](RIGHTS_AND_CREDITS.md)
+[Prototype guide](docs/PROTOTYPE_GUIDE.md) · [Method notes](docs/methods/README.md) · [Image inventory](docs/public-media.json) · [Version scope](docs/VERSION_SCOPE.md) · [Disclosure](DISCLOSURE.md) · [Rights and credits](RIGHTS_AND_CREDITS.md)
 
-Public overview updated 17 September 2026. This repository and the project website share the same presentation scope. This is not a runnable project or a complete research artifact.
+Public overview updated 17 September 2026. Method notes added 24 September 2026. The overview above mirrors the project website; dated method notes are linked separately. This is not a runnable project or a complete research artifact.

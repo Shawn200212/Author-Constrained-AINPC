@@ -42,6 +42,6 @@ AINPC 研究游戏角色的即兴回应与作者控制如何共存。我以 Unre
 
 顾客与服务人员处于同一环境，角色之间的关系为研究作者意图与行动选择提供语境。
 
-[原型导览](docs/PROTOTYPE_GUIDE.md) · [图片清单](docs/public-media.json) · [版本范围](docs/VERSION_SCOPE.md) · [公开范围](DISCLOSURE.md) · [权利与署名](RIGHTS_AND_CREDITS.md)
+[原型导览](docs/PROTOTYPE_GUIDE.md) · [方法说明](docs/methods/README.md) · [图片清单](docs/public-media.json) · [版本范围](docs/VERSION_SCOPE.md) · [公开范围](DISCLOSURE.md) · [权利与署名](RIGHTS_AND_CREDITS.md)
 
-公开概览更新于 2026 年 9 月 17 日。本仓与项目网页保持同一展示范围，不提供可运行工程或完整研究材料。
+公开概览更新于 2026 年 9 月 17 日。方法说明补充于 2026 年 9 月 24 日。上方概览与项目网页一致；按日期的方法说明另行链接。本仓不提供可运行工程或完整研究材料。
