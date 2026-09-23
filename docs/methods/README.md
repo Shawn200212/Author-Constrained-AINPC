@@ -14,7 +14,7 @@ These dated, text-only notes explain what parts of the prototype do, what inform
 
 | Date / 日期 | Note / 说明 | Public commit / 公开提交 | Private record / 私有记录 |
 |---|---|---|---|
-| 2026-09-24 | [Three-layer embedding and holding objects](2026-09-24-three-layer-embedding.md) / [三层 embedding 与持物](2026-09-24-three-layer-embedding.zh-CN.md) | (to be filled by a follow-up commit / 由后续提交回填) | (to be filled by a follow-up commit / 由后续提交回填) |
+| 2026-09-24 | [Three-layer embedding and holding objects](2026-09-24-three-layer-embedding.md) / [三层 embedding 与持物](2026-09-24-three-layer-embedding.zh-CN.md) | `e5e68de` → **`91c4c5e`** | `6da28a8` (private development record, not public / 私有开发记录，不公开) |
 
 The private record column cites a private development record by commit id only; that record is not public.
 
