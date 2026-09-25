@@ -18,17 +18,23 @@ I develop the research framework, interaction design and UE prototype integratio
 
 The design separates responsibilities: the language model proposes dialogue and high-level actions, author constraints check whether they fit, and UE retains authority to execute and change world state. Subsequent decisions use actual execution outcomes. Proposals, checks and results are recorded separately for review. The diagram maps these responsibilities; some paths remain in development.
 
-![Responsibilities of model proposals, author constraints and UE execution](docs/media/public-interaction-overview.svg)
+![How a proposal becomes an action](docs/media/public-interaction-overview.png)
 
-## Research focus and next steps
+Conceptual architecture, not a completed service. Some paths remain in development; protocols and evaluation details are not shown.
+
+## Motion, hands and shared objects
+
+The execution work also considers three levels: situation and presentation, whole-body motion, and hand states. These describe how an action is expressed; they do not replace the author-constraint checks. A learned situation-to-presentation mapping remains future work. The current body-motion representation uses a linear projection, while learned alternatives remain under comparison. Hand states are working descriptions, not validated grasp categories.
+
+Current development also addresses sharing objects and taking a seat when several guests are present. These are development rules, not a completed autonomous service. The [dated method notes](https://github.com/Shawn200212/Author-Constrained-AINPC/tree/main/docs/methods) describe their purpose and limits without publishing implementation details.
+
+## Research focus and limits
 
 The research distinguishes conformity to an author's intent from successful execution. Examining them separately could help creators understand unexpected character responses and revise their designs. This potential benefit still needs evaluation, with separate evidence for execution reliability and player experience.
 
 Dialogue, speech and some character interactions have working paths. The next step is to connect them into a sustained multi-character demonstration. A complete autonomous service flow is unfinished, and formal gameplay evaluation has not begun. This overview shares the research approach and prototype setting; operational scoring rules, prompts, algorithm implementations, evaluation data and findings remain private.
 
 ## Prototype scenes
-
-Development captures from August–September 2026.
 
 ### A place for conversation
 
@@ -42,12 +48,12 @@ Conversation sits within a shared table setting, where character orientation, di
 
 Guests and service staff inhabit the same environment. Their relationships provide a setting for examining authored intentions and action choices.
 
-## Browse by type
+## Related pages
 
-| Type | Pages |
-|---|---|
-| Method notes, newest first | [25 September 2026: Serving several guests](docs/methods/2026-09-25-serving-several-guests.md) · [24 September 2026: Three-layer embedding and holding objects](docs/methods/2026-09-24-three-layer-embedding.md) · [All notes](docs/methods/README.md) |
-| Scenes and diagram | [Prototype guide](docs/PROTOTYPE_GUIDE.md) · [Image inventory](docs/public-media.json) |
-| Scope and rights | [Disclosure](DISCLOSURE.md) · [Version scope and public revisions](docs/VERSION_SCOPE.md) · [Rights and credits](RIGHTS_AND_CREDITS.md) |
+[Dated method notes](docs/methods/README.md) · [Prototype guide](docs/PROTOTYPE_GUIDE.md) · [Version scope](docs/VERSION_SCOPE.md)
 
-Public overview updated 17 September 2026. Method notes added 24 September 2026 and 25 September 2026. The overview above mirrors the project website; dated method notes are linked separately. This is not a runnable project or a complete research artifact.
+[AIWG](https://github.com/Shawn200212/AI-World-Generator)
+
+[Disclosure](DISCLOSURE.md) · [Image inventory](docs/public-media.json) · [Rights and credits](RIGHTS_AND_CREDITS.md)
+
+Overview updated 26 September 2026. The narrative, conceptual figure and scene images mirror the project website. This repository is a research overview, not a runnable project or a complete research artifact.
