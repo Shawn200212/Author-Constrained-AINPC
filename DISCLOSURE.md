@@ -2,6 +2,26 @@
 
 This file sets out what this repository discloses, what it never discloses and what stays in private development records, followed by the limits of these boundaries. It was revised on 24 September 2026, when dated method notes were added.
 
+## At a glance
+
+Added on 25 September 2026. Each kind of material sits in exactly one column; the sections below give the detail.
+
+| Material | Public in this repository | Private development records | Never published |
+|---|---|---|---|
+| Research question, approach and the author's role | Front page overview | Detailed plans | — |
+| How parts of the prototype work | Dated, text-only method notes | Interface specifications, rule parameters and corrections | — |
+| Scene images | Three curated development stills on the front page | Other development frames, reduced in size | Full-size original frames |
+| Diagrams | One conceptual responsibility diagram per language | Figures and charts drawn from data | — |
+| Numbers | Dates and commit ids only | Measurements, parameter values and counts, each tied to an exact commit | — |
+| Names | Platforms, named generically | Assets, clips, characters, runs, fields and version labels | — |
+| Code | None | Source code | Third-party source assets |
+| Logs | None | Selected run records | Raw logs |
+| Evaluation | Principles the work has adopted | Development diagnostics | Scoring instruments and anchors, individual ratings, participant information |
+| Unpublished research | None | None | Manuscripts, review correspondence, unpublished findings |
+| Credentials and local file paths | None | None | Always excluded |
+
+Anything not listed is treated as private until it has been reviewed for disclosure. Nothing moves into the public column unless the author has approved the exact change.
+
 ## What this repository discloses
 
 The front page mirrors the project website: the research question, restaurant context, author's contribution, a conceptual responsibility diagram and three scene images. They are not development logs or a complete research artifact.
@@ -29,6 +49,26 @@ These boundaries reduce exposure of implementation and research materials; they 
 ---
 
 本文件说明本仓公开什么、始终不公开什么、哪些内容留在私有开发记录中，最后说明这些边界的限度。2026 年 9 月 24 日补充方法说明时修订。
+
+## 一览
+
+2026 年 9 月 25 日补充。每一类材料只落在一栏；细则见下面各节。
+
+| 材料 | 本仓公开 | 私有开发记录 | 永不公开 |
+|---|---|---|---|
+| 研究问题、思路与本人贡献 | 首页概览 | 详细计划 | — |
+| 原型各部分如何工作 | 按日期发布的纯文字方法说明 | 接口规格、规则参数与更正 | — |
+| 场景图片 | 首页三张精选开发静帧 | 其余开发画面（缩小后） | 全尺寸原图 |
+| 图示 | 每种语言一张概念职责图 | 由数据画出的图与图表 | — |
+| 数字 | 只有日期与提交编号 | 测量值、参数值与计数，逐一绑定确切提交 | — |
+| 名称 | 平台，只作泛称 | 资产、片段、角色、运行、字段与版本号 | — |
+| 代码 | 无 | 源码 | 第三方源资产 |
+| 日志 | 无 | 选定的运行记录 | 原始日志 |
+| 评估 | 已采纳的评估原则 | 开发诊断 | 评分工具与锚点、逐条评分、参与者资料 |
+| 未公开的研究材料 | 无 | 无 | 稿件及相关往来、未公开结果 |
+| 凭据与本机文件路径 | 无 | 无 | 一律排除 |
+
+未列出的材料在完成披露审查之前一律按私有处理。任何内容都要经作者核准确切改动，才会进入“本仓公开”一栏。
 
 ## 本仓公开的内容
 

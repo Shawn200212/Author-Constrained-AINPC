@@ -42,6 +42,12 @@ Conversation sits within a shared table setting, where character orientation, di
 
 Guests and service staff inhabit the same environment. Their relationships provide a setting for examining authored intentions and action choices.
 
-[Prototype guide](docs/PROTOTYPE_GUIDE.md) · [Method notes](docs/methods/README.md) · [Image inventory](docs/public-media.json) · [Version scope](docs/VERSION_SCOPE.md) · [Disclosure](DISCLOSURE.md) · [Rights and credits](RIGHTS_AND_CREDITS.md)
+## Browse by type
 
-Public overview updated 17 September 2026. Method notes added 24 September 2026. The overview above mirrors the project website; dated method notes are linked separately. This is not a runnable project or a complete research artifact.
+| Type | Pages |
+|---|---|
+| Method notes, newest first | [25 September 2026: Serving several guests](docs/methods/2026-09-25-serving-several-guests.md) · [24 September 2026: Three-layer embedding and holding objects](docs/methods/2026-09-24-three-layer-embedding.md) · [All notes](docs/methods/README.md) |
+| Scenes and diagram | [Prototype guide](docs/PROTOTYPE_GUIDE.md) · [Image inventory](docs/public-media.json) |
+| Scope and rights | [Disclosure](DISCLOSURE.md) · [Version scope and public revisions](docs/VERSION_SCOPE.md) · [Rights and credits](RIGHTS_AND_CREDITS.md) |
+
+Public overview updated 17 September 2026. Method notes added 24 September 2026 and 25 September 2026. The overview above mirrors the project website; dated method notes are linked separately. This is not a runnable project or a complete research artifact.
