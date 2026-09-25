@@ -2,6 +2,18 @@
 
 This is a curated research overview, not the development repository or a runnable software release.
 
+## Current overview — 26 September 2026
+
+The current bilingual overview mirrors the website: eight narrative paragraphs, one conceptual responsibility figure per language and the same three scene images. The two added paragraphs summarize motion, hand states and shared-object work already described in the dated public method notes. The figure is exported from the website and replaces the older SVG in the current presentation; it is not a data-derived chart. The dated notes remain available separately.
+
+No engineering source, training details, evaluation data or unpublished findings are added. Some depicted paths remain in development. Historical commits and tags are unchanged.
+
+当前中英文概览与网页统一：八段正文、每种语言一张概念职责图，以及原有三张场景图。新增两段概述此前公开方法说明中的动作、手部状态和共享物件工作。图表直接导出自网页，替换当前展示的旧 SVG，不是由实验数据生成的图。按日期整理的方法说明另行保留。
+
+没有新增工程源码、训练细节、评估数据或未发表结果；图中部分路径仍在开发。历史提交与标签未改动。
+
+## Earlier revisions
+
 The 17 September 2026 overview revision aligns the website and public repository around six narrative paragraphs, one responsibility diagram per language and three scene images. Local pose and object-contact milestones have been removed from the current presentation. Previous public images and text remain recoverable through Git history and existing tags.
 
 The diagrams are unchanged from the 16 September presentation. This editorial revision adds no experimental result and makes no new claim of engineering completion. Existing tags are unchanged.
