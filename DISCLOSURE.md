@@ -12,8 +12,8 @@ Added on 25 September 2026. Each kind of material sits in exactly one column; th
 | How parts of the prototype work | Dated, text-only method notes | Interface specifications, rule parameters and corrections | — |
 | Scene images | Three curated development stills on the front page | Other development frames, reduced in size | Full-size original frames |
 | Diagrams | One conceptual responsibility diagram per language | Figures and charts drawn from data | — |
-| Numbers | Dates and commit ids only | Measurements, parameter values and counts, each tied to an exact commit | — |
-| Names | Platforms, named generically | Assets, clips, characters, runs, fields and version labels | — |
+| Numbers | Dates and commit ids; image sizes in the image inventory; the two retained labels explained in the version scope | Measurements, parameter values and counts, each tied to an exact commit | — |
+| Names | Platforms by name; third-party assets only generically | Assets, clips, characters, runs, fields and version labels | — |
 | Code | None | Source code | Third-party source assets |
 | Logs | None | Selected run records | Raw logs |
 | Evaluation | Principles the work has adopted | Development diagnostics | Scoring instruments and anchors, individual ratings, participant information |
@@ -60,8 +60,8 @@ These boundaries reduce exposure of implementation and research materials; they 
 | 原型各部分如何工作 | 按日期发布的纯文字方法说明 | 接口规格、规则参数与更正 | — |
 | 场景图片 | 首页三张精选开发静帧 | 其余开发画面（缩小后） | 全尺寸原图 |
 | 图示 | 每种语言一张概念职责图 | 由数据画出的图与图表 | — |
-| 数字 | 只有日期与提交编号 | 测量值、参数值与计数，逐一绑定确切提交 | — |
-| 名称 | 平台，只作泛称 | 资产、片段、角色、运行、字段与版本号 | — |
+| 数字 | 日期与提交编号；图片清单里的图片尺寸；版本范围页解释的两个沿用标签 | 测量值、参数值与计数，逐一绑定确切提交 | — |
+| 名称 | 平台直接写名称；第三方资产只作泛称 | 资产、片段、角色、运行、字段与版本号 | — |
 | 代码 | 无 | 源码 | 第三方源资产 |
 | 日志 | 无 | 选定的运行记录 | 原始日志 |
 | 评估 | 已采纳的评估原则 | 开发诊断 | 评分工具与锚点、逐条评分、参与者资料 |
