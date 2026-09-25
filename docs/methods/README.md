@@ -36,7 +36,7 @@ What each embedding layer describes, how objects are described from their own ge
 
 | Date / 日期 | Note / 说明 | Public commit / 公开提交 | Private record / 私有记录 |
 |---|---|---|---|
-| 2026-09-25 | [Serving several guests: shared objects and taking a seat](2026-09-25-serving-several-guests.md) / [服务多位客人：共享物件与入座](2026-09-25-serving-several-guests.zh-CN.md) | `1c65386` → (filled in after commit / 提交后回填) | (filled in after commit / 提交后回填) |
+| 2026-09-25 | [Serving several guests: shared objects and taking a seat](2026-09-25-serving-several-guests.md) / [服务多位客人：共享物件与入座](2026-09-25-serving-several-guests.zh-CN.md); wording corrected the same day / 当日修正措辞 | `1c65386` → **`33fcf4f`** | `0690bf8` (private development record, not public / 私有开发记录，不公开) |
 | 2026-09-24 | [Three-layer embedding and holding objects](2026-09-24-three-layer-embedding.md) / [三层 embedding 与持物](2026-09-24-three-layer-embedding.zh-CN.md) | `e5e68de` → **`91c4c5e`** | `6da28a8` (private development record, not public / 私有开发记录，不公开) |
 
 The private record column cites a private development record by commit id only; that record is not public.

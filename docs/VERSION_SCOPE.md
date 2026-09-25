@@ -34,7 +34,7 @@ Each row is one public revision, oldest first. Commit ids identify public commit
 | 2026-09-16 | Overview, responsibility diagram and scene stills synchronized with the website | `4724f6c` |
 | 2026-09-17 | Narrative refreshed and aligned with the website; development-node gallery removed | `4640f81`, `e5e68de` |
 | 2026-09-24 | First dated method note and a three-part disclosure boundary, then its revision receipt | `91c4c5e`, `1c65386` |
-| 2026-09-25 | Second dated method note, disclosure table and links grouped by type | (filled in after commit) |
+| 2026-09-25 | Second dated method note, disclosure table and links grouped by type; wording in the note and the disclosure table corrected the same day | `33fcf4f`, then a same-day correction |
 
 本仓是研究概览，不是开发仓或可运行发行版。2026 年 9 月 17 日的精简更新让网页与公开仓统一为六段正文、每种语言一张职责图和三张整体场景图，不再把局部姿势与接触调试作为展示节点。
 
@@ -54,4 +54,4 @@ Each row is one public revision, oldest first. Commit ids identify public commit
 | 2026-09-16 | 概览、职责图与场景静帧与网页同步 | `4724f6c` |
 | 2026-09-17 | 更新研究叙述并与网页统一；移除开发节点图集 | `4640f81`、`e5e68de` |
 | 2026-09-24 | 第一篇按日期的方法说明与三部分公开范围，随后回填修订记录 | `91c4c5e`、`1c65386` |
-| 2026-09-25 | 第二篇按日期的方法说明、公开范围一览表与按类型整理的链接 | （提交后回填） |
+| 2026-09-25 | 第二篇按日期的方法说明、公开范围一览表与按类型整理的链接；当日修正说明与一览表的措辞 | `33fcf4f`，随后当日修正 |

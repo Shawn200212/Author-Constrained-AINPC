@@ -1,6 +1,6 @@
 # Serving several guests: shared objects and taking a seat
 
-Method note, 25 September 2026 · [中文](2026-09-25-serving-several-guests.zh-CN.md) · [All method notes](README.md) · [Disclosure](../../DISCLOSURE.md)
+Method note, 25 September 2026 · wording corrected the same day · [中文](2026-09-25-serving-several-guests.zh-CN.md) · [All method notes](README.md) · [Disclosure](../../DISCLOSURE.md)
 
 ## Status
 
@@ -12,11 +12,11 @@ With a single guest, a restaurant can hide many assumptions: a menu is always fr
 
 ## In brief
 
-The rules fall into four groups: judging whether a character is available, deriving where objects sit on a table and where the server stands to reach them, circulating shared objects among guests, and taking a seat. Each rule is written for every seat, guest and object rather than for one table, and each can be switched off in development to restore the earlier behavior for comparison.
+The rules cover judging whether a character is available, deriving where objects sit on a table and where the server stands to reach them, circulating shared objects among guests, and taking a seat. Each rule is written for every seat, guest and object rather than for one table, and most can be switched off in development to restore the earlier behavior for comparison.
 
 ## One judgment of availability
 
-Whether a guest or a member of staff is busy is decided in one place, and every judgment of busy carries its reason, such as talking, speaking, waiting in a queue, carrying out an action or holding a seat. Idle behavior that only passes time never counts as busy, for guests and staff alike, so a character who is merely idling does not hold up service.
+Whether a guest or a member of staff is busy is decided in one place, and every judgment of busy carries its reason, such as talking, speaking, having tasks queued, carrying out an action or holding a seat. Idle behavior that only passes time never counts as busy, for guests and staff alike, so a character who is merely idling does not hold up service.
 
 ## Table settings derived from the seat
 
@@ -24,7 +24,7 @@ Where the menu, plate, cutlery and bill go is derived from the seat: the chair's
 
 ## Where the server stands
 
-A standing place counts only if the server can actually stand there and walk to it. The choice of which side of a guest the menu goes on is therefore made where all of these constraints are known. If the first side leaves the server nowhere to stand, the same rule tries the other side and checks it against the neighboring settings, and if neither side works, both reasons are reported. Where a character stands to fetch an object follows the object's current place, not an offset written for where it usually rests, and arriving at an object and touching it use the same reach check.
+A standing place counts only if the server can actually stand there and walk to it. The choice of which side of a guest the menu goes on is therefore made where all of these constraints are known. If the first side leaves the server nowhere to stand, the same rule tries the other side and checks it against the neighboring settings, and if neither side works, both reasons are reported. A standing place written for an object is used only when it lies on walkable ground; otherwise, where a character stands to fetch the object follows where the object currently rests. Arriving at an object and touching it use the same reach check.
 
 ## Shared objects circulate
 
@@ -32,11 +32,13 @@ An object borrowed for a step goes back to where it came from when that step is 
 
 ## Taking a seat
 
-Three rules follow how people handle a chair. A guest stands beside the chair, not behind it, to pull it out, and then walks into the space between chair and table from the side, never through the chair. Before pulling, the guest turns toward the table and places the hand nearer the chair on the top of the backrest, guided by inverse kinematics, then steps back with the chair as it moves and lets go once it is out. Each chair rests tucked in at its own table, and pushing in mirrors pulling out at a walking pace. A seated body may overlap its own table, including every part of it, but nothing else.
+The rules for taking a seat follow how people handle a chair. A guest stands beside the chair, not behind it, to pull it out, and then walks into the space between chair and table from the side, never through the chair. Before pulling, the guest turns toward the table and places the hand nearer the chair on the top of the backrest, guided by inverse kinematics, then moves back together with the chair and lets go once it is out. Each chair rests tucked in at its own table, and pushing in mirrors pulling out, at a slow and steady pace. When movement is checked for collisions, a seated body may overlap its own table, including every part of it, but nothing else.
 
 ## Evaluation principles
 
-- Every new rule has a development switch that restores the previous behavior, so a run with the rule can be compared with a run without it.
+These are the evaluation rules the work has adopted; the current checks do not yet meet all of them.
+
+- Most new rules have a development switch that restores the previous behavior, so a run with the rule can be compared with a run without it.
 - The timing and pace of motion phases come from the engine's own record of the motion, not from the clock of a sampling script, which slows down under load.
 - When the search for a standing place fails, every reason for rejection is counted and reported, not only the last one.
 - A check that a path is clear uses the same shape and height as the movement it checks.
@@ -55,6 +57,7 @@ Three rules follow how people handle a chair. A guest stands beside the chair, n
 - The hand reaches the backrest only at a point; the fingers do not yet close around it, and there is no stepping-back motion, so the feet slide while the chair moves.
 - Some seats still use the earlier approach, because nearby scenery blocks the new standing place.
 - Reaching farther than a straight arm implies a lean that is not animated.
+- Seated characters can still pass slightly into chairs and the floor.
 - When several guests are served at once, a complete autonomous service does not yet finish for every guest.
 - The current build does not yet follow every rule in this note.
 - The rules have run only in development diagnostic sessions.
