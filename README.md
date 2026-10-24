@@ -1,4 +1,12 @@
-# AINPC: Author-Constrained Improvisation / AINPC: 作者约束的即兴行动
+# AINPC CHI — Author-Constrained Improvisation / 作者约束的即兴行动
+
+> **Repository scope · 24 October 2026**
+> This public repository is now **AINPC CHI**, the research overview for *Author-Constrained Improvisation*. It preserves the existing research history, images and disclosure boundaries. Standalone AINPC product development now lives in a separate private **AINPC** repository; its implementation and validation data are not published here. The research overview below retains its original evidence scope and dates.
+>
+> **仓库范围 · 2026 年 10 月 24 日**
+> 本公开仓库现命名为 **AINPC CHI**，继续用于“作者约束的即兴行动”研究介绍，保留既有历史、图片和公开边界。纯 AINPC 产品开发已独立至新的私有 **AINPC** 仓库，其实现和验证数据不在本仓公开。下方研究介绍保留原有证据范围与日期。
+
+[English / 中文](README.md) · [中文说明](README.zh-CN.md)
 
 **English**
 
@@ -57,13 +65,13 @@ Conceptual architecture, not a completed service. Some paths remain in developme
 
 The execution work also considers three levels: situation and presentation, whole-body motion, and hand states. These describe how an action is expressed; they do not replace the author-constraint checks. A learned situation-to-presentation mapping remains future work. The current body-motion representation uses a linear projection, while learned alternatives remain under comparison. Hand states are working descriptions, not validated grasp categories.
 
-Current development also addresses sharing objects and taking a seat when several guests are present. These are development rules, not a completed autonomous service. The [dated method notes](https://github.com/Shawn200212/Author-Constrained-AINPC/tree/main/docs/methods) describe their purpose and limits without publishing implementation details.
+Current development also addresses sharing objects and taking a seat when several guests are present. These are development rules, not a completed autonomous service. The [dated method notes](https://github.com/Shawn200212/AINPC-CHI/tree/main/docs/methods) describe their purpose and limits without publishing implementation details.
 
 **中文**
 
 在执行侧，我还探索三个层次的表征：情境与表现、全身动作、手部状态。它们处理行动如何呈现，不取代作者约束检查。情境到表现的学习映射仍是后续工作；当前身体动作表征使用线性投影，学习模型仍在比较中。手部状态是开发中的描述，不是经过验证的抓握分类。
 
-近期开发还关注多位顾客在场时如何共用物件、接近桌边并入座。这些是正在完善的执行规则，不代表完整自主服务已经完成。[按日期整理的方法说明](https://github.com/Shawn200212/Author-Constrained-AINPC/tree/main/docs/methods)介绍了这些工作的目的和限制，不公开具体实现。
+近期开发还关注多位顾客在场时如何共用物件、接近桌边并入座。这些是正在完善的执行规则，不代表完整自主服务已经完成。[按日期整理的方法说明](https://github.com/Shawn200212/AINPC-CHI/tree/main/docs/methods)介绍了这些工作的目的和限制，不公开具体实现。
 
 ## Research focus and limits / 研究关注与当前限制
 
