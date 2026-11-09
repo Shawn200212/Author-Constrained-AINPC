@@ -10,10 +10,10 @@ Added on 25 September 2026. Each kind of material sits in exactly one column; th
 |---|---|---|---|
 | Research question, approach and the author's role | Front page overview | Detailed plans | — |
 | How parts of the prototype work | Dated, text-only method notes | Interface specifications, rule parameters and corrections | — |
-| Scene images | Three curated development stills on the front page | Other development frames, reduced in size | Full-size original frames |
+| Scene images | Three curated development stills on the front page; one test-bench screenshot per language, added on 9 November 2026, with internal values and action names covered | Other development frames, reduced in size | Full-size original frames |
 | Diagrams | One conceptual responsibility diagram per language | Figures and charts drawn from data | — |
-| Numbers | Dates and commit ids; image sizes in the image inventory; the two retained labels explained in the version scope | Measurements, parameter values and counts, each tied to an exact commit | — |
-| Names | Platforms by name; third-party assets only generically | Assets, clips, characters, runs, fields and version labels | — |
+| Numbers | Dates and commit ids; image sizes in the image inventory; the two retained labels explained in the version scope; the default persona slider values visible in the test-bench screenshot | Measurements, parameter values and counts, each tied to an exact commit | — |
+| Names | Platforms by name; third-party assets only generically; the body preset labels visible in the test-bench screenshot | Assets, clips, characters, runs, fields and version labels | — |
 | Code | None | Source code | Third-party source assets |
 | Logs | None | Selected run records | Raw logs |
 | Evaluation | Principles the work has adopted | Development diagnostics | Scoring instruments and anchors, individual ratings, participant information |
@@ -24,7 +24,7 @@ Anything not listed is treated as private until it has been reviewed for disclos
 
 ## What this repository discloses
 
-The front page mirrors the project website: the research question, restaurant context, author's contribution, a conceptual responsibility diagram and three scene images. They are not development logs or a complete research artifact.
+The front page mirrors the project website: the research question, restaurant context, author's contribution, a conceptual responsibility diagram, three scene images, and a short section on recent persona, situation and body work with one redacted test-bench screenshot per language. They are not development logs or a complete research artifact.
 
 The diagram describes information categories and responsibilities. It omits operational rules, actual JSON fields and payloads, prompts, thresholds and repair-selection algorithms. Some depicted paths remain in development. The screenshots show a prototype setting. They do not establish complete autonomous service, synchronized speech, execution reliability or player benefits.
 
@@ -58,10 +58,10 @@ These boundaries reduce exposure of implementation and research materials; they 
 |---|---|---|---|
 | 研究问题、思路与本人贡献 | 首页概览 | 详细计划 | — |
 | 原型各部分如何工作 | 按日期发布的纯文字方法说明 | 接口规格、规则参数与更正 | — |
-| 场景图片 | 首页三张精选开发静帧 | 其余开发画面（缩小后） | 全尺寸原图 |
+| 场景图片 | 首页三张精选开发静帧；2026 年 11 月 9 日加入的每种语言一张实验台截图（内部数值与动作名称已遮盖） | 其余开发画面（缩小后） | 全尺寸原图 |
 | 图示 | 每种语言一张概念职责图 | 由数据画出的图与图表 | — |
-| 数字 | 日期与提交编号；图片清单里的图片尺寸；版本范围页解释的两个沿用标签 | 测量值、参数值与计数，逐一绑定确切提交 | — |
-| 名称 | 平台直接写名称；第三方资产只作泛称 | 资产、片段、角色、运行、字段与版本号 | — |
+| 数字 | 日期与提交编号；图片清单里的图片尺寸；版本范围页解释的两个沿用标签；实验台截图中可见的人格滑条默认值 | 测量值、参数值与计数，逐一绑定确切提交 | — |
+| 名称 | 平台直接写名称；第三方资产只作泛称；实验台截图中可见的身体预设标签 | 资产、片段、角色、运行、字段与版本号 | — |
 | 代码 | 无 | 源码 | 第三方源资产 |
 | 日志 | 无 | 选定的运行记录 | 原始日志 |
 | 评估 | 已采纳的评估原则 | 开发诊断 | 评分工具与锚点、逐条评分、参与者资料 |
@@ -72,7 +72,7 @@ These boundaries reduce exposure of implementation and research materials; they 
 
 ## 本仓公开的内容
 
-首页概览与项目网页一致：研究问题、餐厅情境、本人贡献、概念职责图和三张场景图，不作为开发日志或完整研究材料。
+首页概览与项目网页一致：研究问题、餐厅情境、本人贡献、概念职责图、三张场景图，以及关于人格、情境与身体的近期进展和每种语言一张遮盖过的实验台截图，不作为开发日志或完整研究材料。
 
 公开图只解释信息类别与职责，不提供可复现实现的规则、字段、提示词、阈值或修复选择算法；部分路径仍在开发。截图呈现原型场景，不证明完整自主服务、语音同步、执行可靠性或玩家收益。
 

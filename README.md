@@ -8,6 +8,8 @@
 
 > **Repository scope · 24 October 2026**
 > This public repository is now **AINPC CHI**, the research overview for *Author-Constrained Improvisation*. It preserves the existing research history, images and disclosure boundaries. Standalone AINPC product development now lives in a separate private **AINPC** repository; its implementation and validation data are not published here. The research overview below retains its original evidence scope and dates.
+>
+> **Update · 9 November 2026** — This overview now mirrors the website section on recent persona, situation and body work, with one redacted test-bench screenshot. Implementation, validation data and test figures stay in the private repository.
 
 [Project page](https://ruixiaozhang.com/index_EN#work-ainpc)
 
@@ -49,6 +51,20 @@ The execution work also considers three levels: situation and presentation, whol
 
 Current development also addresses sharing objects and taking a seat when several guests are present. These are development rules, not a completed autonomous service. The [dated method notes](https://github.com/Shawn200212/AINPC-CHI/tree/main/docs/methods) describe their purpose and limits without publishing implementation details.
 
+<a id="recent-work-persona-situation-and-body--近期进展人格情境与身体"></a>
+<a id="recent-work-persona-situation-and-body"></a>
+<a id="近期进展人格情境与身体"></a>
+
+## Recent work: persona, situation and body
+
+Since October 2026, development has focused on one character's complete presence. Persona, situation and body together shape what the character attends to while it waits, how it stands and which small actions it makes. A test bench lets me enter a situation (who, where, when, with whom, how it feels), then compare autonomous idle behaviour across Big Five persona sliders and different bodies. The model first splits the situation into parts and reads it through the persona; the body then chooses its idle posture.
+
+This work is in progress. Overall motion naturalness has not passed my own checks, and contact and joint problems in some actions are still being fixed. Dialogue, speech and body motion have each run in the engine; they still need to be joined into one stable, continuous experience. The test-bench screenshot below is a development view, not a finished game experience.
+
+![Persona × situation × body](docs/media/ainpc-lab-museum-en.webp)
+
+A development screenshot of the test bench: an older body idles in a ‘museum duty’ situation, hands behind the back. Internal values and action names are hidden, and the interface labels are translated into English for this page. The character is an existing asset.
+
 <a id="research-focus-and-limits--研究关注与当前限制"></a>
 <a id="research-focus-and-limits"></a>
 <a id="研究关注与当前限制"></a>
@@ -57,7 +73,7 @@ Current development also addresses sharing objects and taking a seat when severa
 
 The research distinguishes conformity to an author's intent from successful execution. Examining them separately could help creators understand unexpected character responses and revise their designs. This potential benefit still needs evaluation, with separate evidence for execution reliability and player experience.
 
-Dialogue, speech and some character interactions have working paths. The next step is to connect them into a sustained multi-character demonstration. A complete autonomous service flow is unfinished, and formal gameplay evaluation has not begun. This overview shares the research approach and prototype setting; operational scoring rules, prompts, algorithm implementations, evaluation data and findings remain private.
+Dialogue, speech and some character interactions have working paths. The next step is to make one character's idle behaviour, dialogue and motion run continuously, then extend the work to player interaction and to interaction among several characters. A complete autonomous service flow is unfinished, and formal gameplay evaluation has not begun. This overview shares the research approach and prototype setting; operational scoring rules, prompts, algorithm implementations, evaluation data and findings remain private.
 
 <a id="prototype-scenes--原型场景"></a>
 <a id="prototype-scenes"></a>
@@ -89,4 +105,4 @@ Guests and service staff inhabit the same environment. Their relationships provi
 
 [Disclosure](DISCLOSURE.md) · [Image inventory](docs/public-media.json) · [Rights and credits](RIGHTS_AND_CREDITS.md)
 
-Overview updated 26 September 2026. The narrative, conceptual figure and scene images mirror the project website. This repository is a research overview, not a runnable project or a complete research artifact.
+Overview updated 9 November 2026. The narrative, conceptual figure, scene images and test-bench screenshot mirror the project website. This repository is a research overview, not a runnable project or a complete research artifact.

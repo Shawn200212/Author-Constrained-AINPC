@@ -1,8 +1,8 @@
 {
-  "description": "Three scene images shared by the website and public repository. A research overview, not a development log or evaluation dataset.",
+  "description": "Three scene images and one redacted test-bench screenshot per language, shared by the website and public repository. A research overview, not a development log or evaluation dataset.",
   "path_base": "repository root",
   "rights_notice": "RIGHTS_AND_CREDITS.md",
-  "updated": "2026-09-17",
+  "updated": "2026-11-09",
   "evidence_limit": "Development stills show the setting and character relationships; they do not validate complete tasks, synchronized speech or research benefits.",
   "items": [
     {
@@ -34,6 +34,28 @@
       "date_label": "2026-09-15",
       "caption_en": "Guests and service staff inhabit the same environment. Their relationships provide a setting for examining authored intentions and action choices.",
       "caption_zh": "顾客与服务人员处于同一环境，角色之间的关系为研究作者意图与行动选择提供语境。"
+    },
+    {
+      "file": "docs/media/ainpc-lab-museum-zh.webp",
+      "width": 1280,
+      "height": 800,
+      "kind": "test_bench_screenshot",
+      "date_precision": "month",
+      "date_label": "November 2026",
+      "language": "zh",
+      "caption_en": "A development screenshot of the test bench: an older body idles in a ‘museum duty’ situation, hands behind the back. Internal values and action names are hidden, and the interface labels are translated into English for this page. The character is an existing asset.",
+      "caption_zh": "实验台的开发截图：老年身体在“博物馆值班”的情境中自主待机，双手背在身后。内部数值与动作名称已隐去；角色为既有资产。"
+    },
+    {
+      "file": "docs/media/ainpc-lab-museum-en.webp",
+      "width": 1280,
+      "height": 800,
+      "kind": "test_bench_screenshot",
+      "date_precision": "month",
+      "date_label": "November 2026",
+      "language": "en",
+      "caption_en": "A development screenshot of the test bench: an older body idles in a ‘museum duty’ situation, hands behind the back. Internal values and action names are hidden, and the interface labels are translated into English for this page. The character is an existing asset.",
+      "caption_zh": "实验台的开发截图：老年身体在“博物馆值班”的情境中自主待机，双手背在身后。内部数值与动作名称已隐去；角色为既有资产。"
     }
   ],
   "historical_media_note": "Removed development-node images are no longer in the current tree or presentation. Previously public commits and tags remain accessible."

@@ -2,7 +2,13 @@
 
 This is a curated research overview, not the development repository or a runnable software release.
 
-## Current overview — 26 September 2026
+## Current overview — 9 November 2026
+
+The overview now mirrors the website section on recent persona, situation and body work: two narrative paragraphs and one test-bench screenshot per language, with internal values and action names covered. The closing paragraph states the next step in the same words as the website. No engineering source, training details, evaluation data, test figures or unpublished findings are added.
+
+概览同步网站上关于人格、情境与身体的近期进展：两段正文和每种语言一张实验台截图（内部数值与动作名称已遮盖）；结尾段的下一步与网页措辞一致。没有新增工程源码、训练细节、评估数据、测试数字或未发表结果。
+
+## Previous overview — 26 September 2026
 
 The current bilingual overview mirrors the website: eight narrative paragraphs, one conceptual responsibility figure per language and the same three scene images. The two added paragraphs summarize motion, hand states and shared-object work already described in the dated public method notes. The figure is exported from the website and replaces the older SVG in the current presentation; it is not a data-derived chart. The dated notes remain available separately.
 
@@ -35,6 +41,7 @@ Each row is one public revision, oldest first. Commit ids identify public commit
 | 2026-09-17 | Narrative refreshed and aligned with the website; development-node gallery removed | `4640f81`, `e5e68de` |
 | 2026-09-24 | First dated method note and a three-part disclosure boundary, then its revision receipt | `c2aadf9`, `28a9ef0` |
 | 2026-09-25 | Second dated method note, disclosure table and links grouped by type; wording in the note and the disclosure table corrected the same day | `cbf963b`, then a same-day correction |
+| 2026-11-09 | Recent persona, situation and body section and one test-bench screenshot per language, mirroring the website | this revision |
 
 本仓是研究概览，不是开发仓或可运行发行版。2026 年 9 月 17 日的精简更新让网页与公开仓统一为六段正文、每种语言一张职责图和三张整体场景图，不再把局部姿势与接触调试作为展示节点。
 
@@ -55,3 +62,4 @@ Each row is one public revision, oldest first. Commit ids identify public commit
 | 2026-09-17 | 更新研究叙述并与网页统一；移除开发节点图集 | `4640f81`、`e5e68de` |
 | 2026-09-24 | 第一篇按日期的方法说明与三部分公开范围，随后回填修订记录 | `c2aadf9`、`28a9ef0` |
 | 2026-09-25 | 第二篇按日期的方法说明、公开范围一览表与按类型整理的链接；当日修正说明与一览表的措辞 | `cbf963b`，随后当日修正 |
+| 2026-11-09 | 同步网站的人格、情境与身体近期进展，并加入每种语言一张实验台截图 | 本次修订 |
