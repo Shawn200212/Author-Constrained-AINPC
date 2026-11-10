@@ -4,10 +4,12 @@
 <a id="ainpc-chi--author-constrained-improvisation"></a>
 <a id="作者约束的即兴行动"></a>
 
-# AINPC CHI — Author-Constrained Improvisation
+# Author-Constrained AINPC — Author-Constrained Improvisation
 
-> **Repository scope · 24 October 2026**
-> This public repository is now **AINPC CHI**, the research overview for *Author-Constrained Improvisation*. It preserves the existing research history, images and disclosure boundaries. Standalone AINPC product development now lives in a separate private **AINPC** repository; its implementation and validation data are not published here. The research overview below retains its original evidence scope and dates.
+> **Repository scope · 10 November 2026**
+> **Author-Constrained-AINPC** presents *Author-Constrained Improvisation*, a research prototype with artificial intelligence (AI) for non-player characters (NPCs). This repository retains its history, images and disclosure limits. The name does not indicate conference acceptance or publication.
+>
+> Standalone product development continues in a separate private repository. Its implementation and validation data remain private. The research overview below retains its original evidence scope and dates.
 >
 > **Update · 9 November 2026** — This overview now mirrors the website section on recent persona, situation and body work, with one redacted test-bench screenshot. Implementation, validation data and test figures stay in the private repository.
 
@@ -49,7 +51,7 @@ Conceptual architecture, not a completed service. Some paths remain in developme
 
 The execution work also considers three levels: situation and presentation, whole-body motion, and hand states. These describe how an action is expressed; they do not replace the author-constraint checks. A learned situation-to-presentation mapping remains future work. The current body-motion representation uses a linear projection, while learned alternatives remain under comparison. Hand states are working descriptions, not validated grasp categories.
 
-Current development also addresses sharing objects and taking a seat when several guests are present. These are development rules, not a completed autonomous service. The [dated method notes](https://github.com/Shawn200212/AINPC-CHI/tree/main/docs/methods) describe their purpose and limits without publishing implementation details.
+Current development also addresses sharing objects and taking a seat when several guests are present. These are development rules, not a completed autonomous service. The [dated method notes](https://github.com/Shawn200212/Author-Constrained-AINPC/tree/main/docs/methods) describe their purpose and limits without publishing implementation details.
 
 <a id="recent-work-persona-situation-and-body--近期进展人格情境与身体"></a>
 <a id="recent-work-persona-situation-and-body"></a>
